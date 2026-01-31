@@ -1,0 +1,41 @@
+{
+  "langrev": "1",
+  "warnings":  [ "no-unused" ],
+  "dependency-search-paths":  [ "lib" ],
+  "dependencies":  [  ],
+  "authors":  [ "Francis Grizzly Smit <grizzly@smit.id.au>" ],
+  "version": "0.1.0",
+  "test-sources":  [ "test/**" ],
+  "build-dir": "build",
+  "output": "build",
+  "targets": {
+    "gauge": {
+      "type": "executable",
+      "sources":  [ 
+        "src/main.c3",
+        "gauge.c3l/terminal/gauge.c3",
+        "gnu.c3l/gnu.c3",
+        "io.c3l/utils.c3",
+        "string_utils.c3l/string_utils.c3",
+        "array_utils.c3l/array_utils.c3",
+        "os.c3l/sig.c3",
+        "gauge.c3l/terminal/size.c3"
+ ]
+    },
+    "gauge2": {
+      "type": "executable",
+      "sources":  [ 
+        "src2/gauge2.c3",
+        "gauge.c3l/terminal/gauge.c3",
+        "gnu.c3l/gnu.c3",
+        "io.c3l/utils.c3",
+        "string_utils.c3l/string_utils.c3",
+        "array_utils.c3l/array_utils.c3",
+        "os.c3l/sig.c3",
+        "gauge.c3l/terminal/size.c3"
+ ]
+    }
+  },
+  "cpu": "generic",
+  "opt": "O0"
+}

@@ -1,0 +1,3 @@
+module libc;
+
+// extern fn int some_library_function();
