@@ -34,6 +34,13 @@
         "os.c3l/sig.c3",
         "gauge.c3l/terminal/size.c3"
  ]
+    },
+    "test": {
+      "type": "executable",
+      "sources":  [ 
+        "src3/test.c3",
+        "src/size.c3"
+ ]
     }
   },
   "cpu": "generic",
