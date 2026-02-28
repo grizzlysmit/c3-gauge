@@ -13,7 +13,7 @@ int subver = 0;
 fn void usage(ZString arg0, int retcode){
     String? prog = path::temp(ZString.str_view(arg0)).basename();
     File* out = retcode ? io::stderr() : io::stdout();
-    (void)io::fprintfn(out, "%s [options]\n",  prog);
+    (void)io::fprintfn(out, "%s [options] [files...]\n",  prog);
     io::fprintfn(out, "Where options are:",  );
     io::fprintfn(out, "    -h|--help                                    // show this help and exit.",  );
     io::fprintfn(out, "    -v|--version                                 // show version info and exit.",  );

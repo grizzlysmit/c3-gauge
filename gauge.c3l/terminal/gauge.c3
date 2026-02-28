@@ -212,7 +212,7 @@ const CInt SIGSTKFLT = 16;
 const CInt SIGPROF   = 27;
 const CInt SIGWINCH  = 28;
 
-enum Ansi : const inline String
+constdef Ansi : inline String
 {
     ESC                = "\e", 
     CSI                = "\e[",
@@ -509,7 +509,7 @@ fn String colour_from_string(String s, Allocator allocator, bool bg = false) {
     }; // clean up the memory allocs //
 } // fn String colour_from_string(String s, Allocator allocator, bool bg = false) //
 
-enum Bars : const inline char {ONE = 1, TWO = 2}
+constdef Bars : inline char {ONE = 1, TWO = 2}
 
 Bars bars = Bars.ONE;
 
