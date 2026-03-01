@@ -5,6 +5,7 @@
   "dependencies":  [  ],
   "authors":  [ "Francis Grizzly Smit <grizzly@smit.id.au>" ],
   "version": "0.1.0",
+  "sources":  [ "src/**" ],
   "test-sources":  [ "test/**" ],
   "build-dir": "build",
   "output": "build",
@@ -12,34 +13,19 @@
     "gauge": {
       "type": "executable",
       "sources":  [ 
-        "src/main.c3",
-        "gauge.c3l/terminal/gauge.c3",
-        "gnu.c3l/gnu.c3",
-        "io.c3l/utils.c3",
-        "string_utils.c3l/string_utils.c3",
-        "array_utils.c3l/array_utils.c3",
-        "os.c3l/sig.c3",
-        "gauge.c3l/terminal/size.c3"
+        "mains/main.c3"
  ]
     },
     "gauge2": {
       "type": "executable",
       "sources":  [ 
-        "src2/gauge2.c3",
-        "gauge.c3l/terminal/gauge.c3",
-        "gnu.c3l/gnu.c3",
-        "io.c3l/utils.c3",
-        "string_utils.c3l/string_utils.c3",
-        "array_utils.c3l/array_utils.c3",
-        "os.c3l/sig.c3",
-        "gauge.c3l/terminal/size.c3"
+        "mains/gauge2.c3"
  ]
     },
     "test": {
       "type": "executable",
       "sources":  [ 
-        "src3/test.c3",
-        "src/size.c3"
+        "mains/test.c3"
  ]
     }
   },
